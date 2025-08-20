@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]   # your default branch
+    branches: [ master ]     # your default branch
 
 permissions:
   contents: read
@@ -18,16 +18,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # CRA 5 is happiest on Node 18
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - name: Setup Pages
+
+      # Prefer npm ci; if it fails on peer deps, fall back
+      - name: Install deps
+        run: |
+          npm ci || npm install --legacy-peer-deps
+
+      - name: Build
+        run: npm run build
+
+      - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Add 404 fallback (React Router fix)
+
+      # React Router refresh fallback
+      - name: Add 404 fallback
         run: cp build/index.html build/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
