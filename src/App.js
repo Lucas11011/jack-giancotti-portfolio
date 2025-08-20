@@ -55,7 +55,7 @@ function Home() {
 // Main App component with routing to All Work page
 function App() {
   return (
-    <Router>
+    <Router basename="/jack-giancotti-portfolio">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
