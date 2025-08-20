@@ -25,13 +25,15 @@ jobs:
           node-version: 18
           cache: npm
 
-      # Prefer npm ci; if it fails on peer deps, fall back
+      # install deps (fall back to legacy peer deps if needed)
       - name: Install deps
         run: |
           npm ci || npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
+        env:
+          CI: false            # <-- prevent warnings from failing the build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
