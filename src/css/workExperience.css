@@ -1,0 +1,143 @@
+.work-experience {
+  padding: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.work-experience h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.experience-container {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 68rem;
+  font-size: 0.9rem;
+}
+
+.experience-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-item {
+  text-align: left;
+}
+
+.experience-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experience-content p {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.experience-content p strong {
+  font-weight: 500;
+}
+
+.experience-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.experience-image img {
+  margin-left: 3rem;
+  margin-top: 3rem;
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 1020px) {
+  .experience-image img {
+  margin-left: 3rem;
+  margin-top: 3rem;
+  width: 18rem;
+  height: 27rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+}
+
+@media (max-width: 768px) {
+  .work-experience {
+    padding: 1rem;
+  }
+  
+  .work-experience h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .experience-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .experience-list {
+    order: 2; /* Move experience list below image */
+    text-align: center;
+  }
+  
+  .experience-item {
+    text-align: center;
+  }
+  
+  .experience-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .experience-image {
+    order: 1; /* Move image to top */
+  }
+  
+  .experience-image img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 250px;
+    height: 370px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .work-experience {
+    padding: 0.5rem;
+  }
+  
+  .work-experience h2 {
+    font-size: 1.2rem;
+  }
+  
+  .experience-container {
+    gap: 1.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .experience-content h3 {
+    font-size: 1rem;
+  }
+  
+  .experience-content p {
+    line-height: 1.4;
+  }
+  
+  .experience-image img {
+    width: 200px;
+    height: 250px;
+  }
+}

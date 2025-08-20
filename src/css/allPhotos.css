@@ -1,0 +1,107 @@
+.all-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.all-photos img {
+  width: 100%;
+  height: auto;        /* consistent sizing */
+  object-fit: cover;    /* crop nicely without distortion */
+  border-radius: 8px;
+  display: block;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  inset: 0; /* shorthand for top:0, right:0, bottom:0, left:0 */
+  background: rgba(0, 0, 0, 0.9); /* dark semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* ensure it's on top */
+  cursor: pointer;
+}
+
+/* Enlarged selected image */
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Close button for lightbox */
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+
+    &hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.lightbox-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 810px) {
+  .all-photos {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0.75rem;
+  }
+  
+  .all-photos img {
+    border-radius: 6px;
+  }
+  
+  .lightbox-img {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+
+/* Smaller Mobile Styles */
+@media (max-width: 480px) {
+  .all-photos {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .all-photos img {
+    border-radius: 4px;
+  }
+  
+  .all-photos img:hover {
+    transform: scale(1.02); /* Reduced hover effect on mobile */
+  }
+  
+  .lightbox-img {
+    max-width: 98%;
+    max-height: 98%;
+    border-radius: 8px;
+  }
+}
