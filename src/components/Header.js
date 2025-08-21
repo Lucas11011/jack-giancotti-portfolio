@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/header.css';
-import bgVideo from '../videos/SandbarsunCompressed.mp4';
+import bgVideo from '../videos/SandbarsunCompressed2.mp4';
 import pfpImage from '../imgs/pfp.jpg';
 
 // Header component with background video and profile picture with caption

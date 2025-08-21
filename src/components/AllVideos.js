@@ -7,7 +7,7 @@ import video2 from '../videos/disability_servicesCompressed.mp4';
 import video3 from '../videos/DockCompressed.mp4';
 import video4 from '../videos/Final_Compressed.mp4';
 import video5 from '../videos/RefinedvideoCompressed.mp4';
-import video6 from '../videos/SandbarsunCompressed.mp4';
+import video6 from '../videos/SandbarsunCompressed2.mp4';
 import video7 from '../videos/SaoLuisProjectCompressed5.mp4';
 
 const videos = [
