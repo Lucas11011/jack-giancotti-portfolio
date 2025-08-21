@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/videoProjects.css';
-import RefinedVideo from '../videos/REFINEDVIDEO.mp4'; // Example video import
-import BoatVideo from '../videos/BOATVIDEO.MOV'; // Example video import
+import RefinedVideo from '../videos/RefinedvideoCompressed.mp4';
+import BoatVideo from '../videos/BOATVIDEO.MOV';
 import { Link } from 'react-router-dom';
 
 // Scroll to top on link click to all videos

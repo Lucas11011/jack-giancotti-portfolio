@@ -3,12 +3,12 @@ import '../css/allVideos.css';
 
 // Importing all videos
 import video1 from '../videos/BOATVIDEO.MOV';
-import video2 from '../videos/disability_services.mp4';
-import video3 from '../videos/DOCK.MP4';
-import video4 from '../videos/FinalCompressed.mp4';
-import video5 from '../videos/REFINEDVIDEO.mp4';
-import video6 from '../videos/SANDBARSUN.MP4';
-import video7 from '../videos/Sao Luis Project.mov';
+import video2 from '../videos/disability_servicesCompressed.mp4';
+import video3 from '../videos/DockCompressed.mp4';
+import video4 from '../videos/Final_Compressed.mp4';
+import video5 from '../videos/RefinedvideoCompressed.mp4';
+import video6 from '../videos/SandbarsunCompressed.mp4';
+import video7 from '../videos/SaoLuisProjectCompressed5.mp4';
 
 const videos = [
     { src: video1, title: 'Boat Video' },
@@ -35,6 +35,9 @@ const AllVideos = () => {
                     </div>
                 ))}
             </div>
+            <p>Disclaimer: Videos may not be as high quality as the originals. Access the original files for better quality here:
+                <a href="https://" target="_blank" rel="noopener noreferrer"> Onedrive link</a>
+            </p>
         </div>
     );
 };
