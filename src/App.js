@@ -54,9 +54,9 @@ function Home() {
 }
 
 // Main App component with routing to All Work page
+// <Router basename="/jack-giancotti-portfolio">
 function App() {
   return (
-    // <Router basename="/jack-giancotti-portfolio">
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
@@ -64,8 +64,7 @@ function App() {
           <Route path="/allwork" element={<AllWork />} />
         </Route>
       </Routes>
-    <BrowserRouter>
-    // </Router>
+  </BrowserRouter>
   );
 }
 
