@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+// BrowserRouter as Router
 import Navbar from './components/Navbar';
 import './App.css';
 import Header from './components/Header';
@@ -55,14 +56,16 @@ function Home() {
 // Main App component with routing to All Work page
 function App() {
   return (
-    <Router basename="/jack-giancotti-portfolio">
+    // <Router basename="/jack-giancotti-portfolio">
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/allwork" element={<AllWork />} />
         </Route>
       </Routes>
-    </Router>
+    <BrowserRouter>
+    // </Router>
   );
 }
 
