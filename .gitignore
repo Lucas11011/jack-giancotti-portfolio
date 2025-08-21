@@ -23,13 +23,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # --- keep original large media out of git (but allow web-ready files in /public) ---
-/src/videos/
-/src/photos/
-/src/**/*.mp4
-/src/**/*.MP4
-/src/**/*.mov
-/src/**/*.MOV
-/src/**/*.zip
+# /src/videos/
+# /src/photos/
+# /src/**/*.mp4
+# /src/**/*.MP4
+# /src/**/*.mov
+# /src/**/*.MOV
+# /src/**/*.zip
 
 # stray local folder you don't want in the repo
 /jack-portfolio/
