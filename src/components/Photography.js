@@ -18,10 +18,10 @@ const Photography = () => {
                 </div>
                 <div className="photo-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Besides videography, I’m also skilled with photography. Producing both professional headshots and scenic images from my travels.
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I enjoy creating sharp, vibrant photos that capture personality in portraits and detail in landscapes. Whether for personal branding, marketing, or storytelling, my goal is to deliver images that feel natural and authentic.
                     </p>
                 </div>
             </div>

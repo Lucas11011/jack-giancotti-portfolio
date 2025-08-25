@@ -19,7 +19,7 @@ const VideoProjects = () => {
                         <source src={RefinedVideo} type="video/mp4" />
                     </video>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I specialize in producing professional marketing videos that help businesses showcase their brand, services, and story. From pre-production planning and on-site directing to editing and final delivery, I handle each step to ensure the message is clear and engaging. This project is one example of how I’ve partnered with a company to translate their vision into a polished, audience-ready video.
                     </p>
                 </div>
                 <div className="project-card">
@@ -27,7 +27,7 @@ const VideoProjects = () => {
                         <source src={BoatVideo} type="video/mp4" />
                     </video>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        My work also includes aerial videography and advanced editing, which allow me to add cinematic movement and unique perspectives to projects. I’m experienced in drone operation, capturing smooth and dynamic shots that elevate a final piece. This video demonstrates just one way I use drone footage and editing expertise to create visually compelling content that stands out.
                     </p>
                 </div>
             </div>

@@ -35,9 +35,9 @@ const AllVideos = () => {
                     </div>
                 ))}
             </div>
-            <p>Disclaimer: Videos may not be as high quality as the originals. Access the original files for better quality here:
+            {/* <p>Disclaimer: Videos may not be as high quality as the originals. Access the original files for better quality here:
                 <a href="https://" target="_blank" rel="noopener noreferrer"> Onedrive link</a>
-            </p>
+            </p> */}
         </div>
     );
 };

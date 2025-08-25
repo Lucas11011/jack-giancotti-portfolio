@@ -10,6 +10,7 @@ import InDesign from '../imgs/icons/indesign.svg';
 import Linkedin from '../imgs/icons/icons8-linkedin-48.png';
 import Instagram from '../imgs/icons/icons8-instagram-48.png';
 import Gmail from '../imgs/icons/icons8-gmail-48.png';
+import Resume from '../Jack Giancotti Resume.pdf'
 
 const AboutMe = () => {
     return (
@@ -31,7 +32,7 @@ const AboutMe = () => {
                     <img src={Photoshop} alt="Adobe Photoshop" />
                     <img src={InDesign} alt="Adobe InDesign" />
                 </div>
-                <button className="resume-button">Access Resume</button>
+                <a target="_blank" rel="noopener noreferrer" href={Resume} className="resume-button">Access Resume</a>
             </div>
             <div className="profile-text-container-about-me">
                 <img src={profilePic2} alt="Profile" className="profile-pic-about-me" />

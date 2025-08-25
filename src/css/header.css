@@ -34,6 +34,13 @@ header {
   align-items: center;
   gap: 2rem; /* Space between profile pic and caption */
   margin-bottom: 10rem;
+  width: 100%; /* Add fixed width */
+  max-width: 1200px; /* Prevent it from getting too wide */
+  margin-left: 9rem;
+}
+
+.caption {
+  flex: 1;
 }
 
 .profile-pic-header {
@@ -55,9 +62,10 @@ header {
   text-shadow: 2px 1.5px 10px rgba(0, 0, 0, 10);
 }
 
-.videographer-text {
-  margin-left: 12rem;
-}
+/* .videographer-text {
+  margin-left: 1rem;
+} */
+
 
 @media (max-width: 1000px) {
   .caption p {
@@ -74,6 +82,14 @@ header {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .profile-text-container-header {
+    margin-left: 0rem;
+  }
+
+.profile-pic-header {
+    margin-right: 0rem;
+  }
+
   header {
     height: 100vh;
   }
@@ -110,6 +126,10 @@ header {
 
 /* Small Mobile Styles */
 @media (max-width: 480px) {
+  .profile-pic-header {
+      margin-right: 0rem;
+  }
+
   .caption p {
     font-size: 1.2rem;
   }
