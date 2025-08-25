@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import '../css/allPhotos.css';
 
 // importing all photos images
-import img1 from '../photos/_MG_6619.JPG';
+import img1 from '../photos/_MG_6619.jpg';
 import img2 from '../photos/_MG_66261.JPG';
 import img3 from '../photos/_MG_6652.JPG';
 import img4 from '../photos/06_Giancotti_angel1_faial.jpg';
 import img5 from '../photos/_MG_8866.JPG';
 
-// import img6 from '../photos/_MG_8854.JPG';
+import img6 from '../photos/_MG_8854.JPG';
 import img7 from '../photos/_MG_8855.JPG';
 import img8 from '../photos/_MG_8858.JPG';
 import img9 from '../photos/_MG_8863.JPG';
@@ -19,7 +19,7 @@ import img13 from '../photos/_MG_8889.JPG';
 import img14 from '../photos/_MG_8920.JPG';
 import img15 from '../photos/_MG_8921.JPG';
 import img16 from '../photos/_MG_8977.JPG';
-// import img17 from '../photos/_MG_8983.JPG';
+import img17 from '../photos/_MG_8983.JPG';
 import img18 from '../photos/_MG_8986.JPG';
 import img20 from '../photos/horizontal.jpg';
 import img19 from '../photos/white.jpg';
@@ -27,9 +27,9 @@ import img21 from '../photos/vertical2.jpg';
 import img22 from '../photos/vertical1.jpg';
 
 const images = [
-    img1, img2, img3, img4, img5,
+    img1, img2, img3, img4, img5, img6,
     img7, img8, img9, img10, img11, img12,
-    img13, img14, img15, img16,
+    img13, img14, img15, img16, img17,
     img18, img19, img20, img21, img22
 ];
 
