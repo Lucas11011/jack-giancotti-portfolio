@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/allPhotos.css';
 
 // importing all photos images
-import img1 from '../photos/_MG_6619.jpg';
+import img1 from '../photos/_MG_6619.JPG';
 import img2 from '../photos/_MG_66261.JPG';
 import img3 from '../photos/_MG_6652.JPG';
 import img4 from '../photos/06_Giancotti_angel1_faial.jpg';
