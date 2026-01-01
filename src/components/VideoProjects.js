@@ -19,7 +19,7 @@ const VideoProjects = () => {
                         <source src={RefinedVideo} type="video/mp4" />
                     </video>
                     <p>
-                        I specialize in producing professional marketing videos that help businesses showcase their brand, services, and story. From pre-production planning and on-site directing to editing and final delivery, I handle each step to ensure the message is clear and engaging. This project is one example of how I’ve partnered with a company to translate their vision into a polished, audience-ready video.
+                        I specialize in producing professional marketing videos that help businesses showcase their brand, services, and story. From pre-production planning and on-site directing to editing and final delivery, I handle each step to ensure the message is clear and engaging. This project is one example of how I’ve partnered with a company to translate their vision into a polished video.
                     </p>
                 </div>
                 <div className="project-card">

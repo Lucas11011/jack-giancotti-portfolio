@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import '../css/header.css';
 import bgVideo from '../videos/SandbarsunCompressed2.mp4';
+import headerPoster from '../imgs/bg.png';
 import pfpImage from '../imgs/pfp.jpg';
 
 // Header component with background video and profile picture with caption
@@ -12,6 +13,22 @@ const Header = () => {
     const [currentText, setCurrentText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [typeSpeed, setTypeSpeed] = useState(150);
+    const [isVideoReady, setIsVideoReady] = useState(false);
+
+    useEffect(() => {
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'preload';
+        preloadLink.as = 'video';
+        preloadLink.href = bgVideo;
+        preloadLink.type = 'video/mp4';
+        document.head.appendChild(preloadLink);
+
+        return () => {
+            if (preloadLink.parentNode) {
+                preloadLink.parentNode.removeChild(preloadLink);
+            }
+        };
+    }, []);
 
     // Text animation effect
     useEffect(() => {
@@ -41,8 +58,22 @@ const Header = () => {
 
 
     return (
-        <header>
-            <video autoPlay muted loop className="background-header">
+        <header className={isVideoReady ? 'video-ready' : 'video-loading'}>
+            <div
+                className={`background-fallback ${isVideoReady ? 'is-hidden' : ''}`}
+                aria-hidden="true"
+                style={{ backgroundImage: `url(${headerPoster})` }}
+            />
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                poster={headerPoster}
+                onLoadedData={() => setIsVideoReady(true)}
+                className="background-header"
+            >
                 <source src={bgVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -51,7 +82,10 @@ const Header = () => {
                     <img src={pfpImage} alt="Profile" className="profile-pic-header" />
                     <div className="caption">
                         <p>Hi, I'm Jack. <br />
-                            <span className="videographer-text">{currentText}</span></p>
+                            <div className="typing-line">
+                                <span className="videographer-text">{currentText}</span>
+                            </div>
+                        </p>
                     </div>
                 </div>
             </div>
