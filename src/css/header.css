@@ -167,6 +167,11 @@ header {
   .caption p {
     font-size: 1.2rem;
   }
+  .typing-line{
+  height: 2em;        /* reserve one line */
+  line-height: 2em;
+  overflow: hidden;     /* prevents jumpiness */
+}
   
   .profile-pic-header {
     width: 100px;
