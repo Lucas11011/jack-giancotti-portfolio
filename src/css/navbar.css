@@ -3,12 +3,20 @@ html {
 }
 
 nav {
-  background-color: #1c1c1c;
+  background-color: transparent;
   color: #ffffff;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 900;
+  text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 
 .logo {
@@ -33,19 +41,22 @@ nav {
   color: #ffffff;
   text-decoration: none;
   margin-left: 1.5rem;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
 }
 
 .menu-icon button {
-  margin-left: 1.5rem;
+  margin-left: 0;
   color: #ffffff;
   background: none;
   border: none;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .menu-icon svg {
   width: 1.5rem;
   height: 1.5rem;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
 }
 
 /* Sidebar Styles */

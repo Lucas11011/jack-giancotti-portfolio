@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="contact-section">
-                <p>Contact me!</p>
+                <p>Contact me</p>
                 <div className="social-links">
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                         <img src={Linkedin} alt="LinkedIn" />
@@ -44,7 +44,7 @@ const Footer = () => {
                 </Link>
             )}
 
-            <p className="copyright">© Jack Giancotti</p>
+            <p className="copyright">© {new Date().getFullYear()} Jack Giancotti. All rights reserved.</p>
         </footer>
     );
 };
