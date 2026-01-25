@@ -3,20 +3,29 @@ html {
 }
 
 nav {
-  background-color: transparent;
+  background-color: #1c1c1c;
   color: #ffffff;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  z-index: 900;
+  text-shadow: none;
+  box-sizing: border-box;
+}
+
+.nav-transparent {
+  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  z-index: 900;
   text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.6);
-  box-sizing: border-box;
+}
+
+.nav-solid {
+  position: relative;
 }
 
 .logo {

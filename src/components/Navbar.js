@@ -19,10 +19,11 @@ const Navbar = () => {
 
     // Check if we're on the AllWork page, if so, don't show nav links
     const isAllWorkPage = location.pathname === '/AllWork' || location.pathname === '/allwork';
+    const isHomePage = location.pathname === '/';
 
     return (
         <>
-            <nav>
+            <nav className={isHomePage ? 'nav-transparent' : 'nav-solid'}>
                 <div className="logo">
                     <Link to="/" style={{ marginLeft: "1rem", textDecoration: "none", color: "inherit" }}>
                         Jack Giancotti
