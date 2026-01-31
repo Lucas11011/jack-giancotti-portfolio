@@ -24,8 +24,14 @@
   flex: 1;
   text-align: left;
   position: relative;
-  border: 1px solid #949494;
+  border: 0.5px solid #949494;
   border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card p {

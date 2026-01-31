@@ -16,13 +16,13 @@ const Footer = () => {
             <div className="contact-section">
                 <p>Contact me</p>
                 <div className="social-links">
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jackgiancotti/" target="_blank" rel="noopener noreferrer">
                         <img src={Linkedin} alt="LinkedIn" />
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/jack.giancotti/" target="_blank" rel="noopener noreferrer">
                         <img src={Instagram} alt="Instagram" />
                     </a>
-                    <a href="mailto:jack@example.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jackgiancotti@gmail.com&su=&body=" target="_blank" rel="noopener noreferrer">
                         <img src={Gmail} alt="Email" />
                     </a>
                 </div>
