@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 // BrowserRouter as Router^
 import Navbar from './components/Navbar';
 import './App.css';
@@ -64,6 +65,7 @@ function App() {
           <Route path="/allwork" element={<AllWork />} />
         </Route>
       </Routes>
+      <Analytics />
   </BrowserRouter>
   );
 }
