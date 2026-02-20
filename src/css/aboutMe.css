@@ -1,8 +1,10 @@
 .about-me {
   padding: 2rem;
   max-width: 70rem;
-  display: flex; /* flexbox layout for proper alignment */
-  justify-content: space-between; /* Space between left and right content */
+  display: flex;
+  /* flexbox layout for proper alignment */
+  justify-content: space-between;
+  /* Space between left and right content */
 }
 
 .about-me h2 {
@@ -20,8 +22,10 @@
   align-items: flex-start;
   text-align: left;
   color: black;
-  line-height: 1.4; /* Slightly increased for better readability */
-  margin-right: 5rem; /* Add space between content and profile pic */
+  line-height: 1.4;
+  /* Slightly increased for better readability */
+  margin-right: 5rem;
+  /* Add space between content and profile pic */
 }
 
 .icons {
@@ -33,6 +37,12 @@
 .icons img {
   width: 32px;
   height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
 }
 
 .social-links {
@@ -46,7 +56,7 @@
   height: 42px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
@@ -69,12 +79,13 @@
   text-decoration: none;
   border-radius: 20px;
   cursor: pointer;
-  border: none; /* cleaner style */
+  border: none;
+  /* cleaner style */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   &:active {
@@ -96,7 +107,8 @@
 .profile-text-container-about-me {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the profile pic and social links */
+  align-items: center;
+  /* Center the profile pic and social links */
   gap: 1rem;
 }
 
@@ -108,36 +120,38 @@
     padding: 1rem;
     text-align: center;
   }
-  
+
   .about-me h2 {
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
   }
-  
+
   .content-about-me {
     margin-right: 0;
     margin-bottom: 2rem;
     align-items: center;
     text-align: center;
-    order: 2; /* Move pfp below content */
+    order: 2;
+    /* Move pfp below content */
   }
-  
+
   .profile-pic-about-me {
     width: 150px;
     height: 150px;
     margin-top: 0;
   }
-  
+
   .profile-text-container-about-me {
-    order: 2; /* Move profile picture to bottom */
+    order: 2;
+    /* Move profile picture to bottom */
     margin-bottom: 1rem;
   }
-  
+
   .social-links {
     justify-content: center;
   }
-  
+
   .icons {
     justify-content: center;
   }
@@ -148,26 +162,26 @@
   .about-me {
     padding: 0.5rem;
   }
-  
+
   .about-me h2 {
     font-size: 1.2rem;
   }
-  
+
   .profile-pic-about-me {
     width: 120px;
     height: 120px;
   }
-  
+
   .social-links img {
     width: 36px;
     height: 36px;
   }
-  
+
   .icons img {
     width: 28px;
     height: 28px;
   }
-  
+
   .resume-button {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;

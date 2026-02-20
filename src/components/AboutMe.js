@@ -25,12 +25,12 @@ const AboutMe = () => {
                     Extensive prior experience in marketing and social media for Refined Renovations and built proficient knowledge in all Adobe software, mostly in Adobe Premiere Pro and DaVinci Resolve.
                 </p>
                 <div className="icons">
-                    <img src={Premiere} alt="Adobe Premiere Pro" />
-                    <img src={DaVinciResolve} alt="DaVinci Resolve" />
-                    <img src={AfterEffects} alt="Adobe After Effects" />
-                    <img src={Audition} alt="Adobe Audition" />
-                    <img src={Photoshop} alt="Adobe Photoshop" />
-                    <img src={InDesign} alt="Adobe InDesign" />
+                    <img src={Premiere} alt="Adobe Premiere Pro" title="Adobe Premiere Pro" />
+                    <img src={DaVinciResolve} alt="DaVinci Resolve" title="DaVinci Resolve" />
+                    <img src={AfterEffects} alt="Adobe After Effects" title="Adobe After Effects" />
+                    <img src={Audition} alt="Adobe Audition" title="Adobe Audition" />
+                    <img src={Photoshop} alt="Adobe Photoshop" title="Adobe Photoshop" />
+                    <img src={InDesign} alt="Adobe InDesign" title="Adobe InDesign" />
                 </div>
                 <a target="_blank" rel="noopener noreferrer" href={Resume} className="resume-button">Access Resume</a>
             </div>
