@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/allVideos.css';
 
 // Importing all videos
+import video0 from '../videos/YouGotItForAnt.mp4';
 import video1 from '../videos/BOATVIDEO.MOV';
 import video2 from '../videos/disability_servicesCompressed.mp4';
 import video3 from '../videos/DockCompressed.mp4';
@@ -11,6 +12,8 @@ import video6 from '../videos/SandbarsunCompressed2.mp4';
 import video7 from '../videos/SaoLuisProjectCompressed5.mp4';
 
 const videos = [
+    // #t=0.5 skips the black opening frame so the browser shows a visible thumbnail
+    { src: video0 + '#t=0.5', title: 'You Got It For Ant' },
     { src: video1, title: 'Boat Video' },
     { src: video2, title: 'UML Disability Services' },
     { src: video3, title: 'Dock' },
