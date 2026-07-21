@@ -5,10 +5,8 @@ import '../css/allVideos.css';
 import video0 from '../videos/YouGotItForAnt.mp4';
 import video1 from '../videos/BOATVIDEO.MOV';
 import video2 from '../videos/disability_servicesCompressed.mp4';
-import video3 from '../videos/DockCompressed.mp4';
 import video4 from '../videos/Final_Compressed.mp4';
 import video5 from '../videos/RefinedvideoCompressed.mp4';
-import video6 from '../videos/SandbarsunCompressed2.mp4';
 import video7 from '../videos/SaoLuisProjectCompressed5.mp4';
 import video8 from '../videos/JackGiancotti_2025_Uml.mp4';
 
@@ -19,10 +17,8 @@ const videos = [
     { embedSrc: 'https://umasslowell.azure-api.net/brightcove/v1/video/6397985478112', title: 'UML Industry Days' },
     { src: video1, title: 'Boat Video' },
     { src: video2, title: 'UML Disability Services' },
-    { src: video3, title: 'Dock' },
     { src: video4, title: 'UML Commuting' },
     { src: video5, title: 'Refined Renovations Video' },
-    { src: video6, title: 'Sandbarsun' },
     { src: video7, title: 'Sao Luis Project' }
 ];
 
