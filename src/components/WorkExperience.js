@@ -11,40 +11,40 @@ const WorkExperience = () => {
                 <div className="experience-list">
                     <div className="experience-item">
                         <div className="experience-content">
-                            <h3>Audio/Visual Department</h3>
+                            <h3>Production Assistant - Camera Operator</h3>
                             <p><strong>Oak View Group - Part-time</strong></p>
-                            <p>Sep 2024 - Present</p>
+                            <p>Aug 2024 - Present</p>
                             <p>Lowell, Massachusetts, United States - On-site</p>
-                            <p>
-                                • Camera Operator at the Tsongas Center in partnership with ESPN and NESN. Used a variety of cameras for a variety of events. Events include PWHL's Boston Fleet, IFL's Massachusetts Pirates, and the UML Riverhawks.
-                            </p>
+                            <ul>
+                                <li>Operate, set up, strike, and cable broadcast cameras at the Tsongas Center for ESPN and NESN coverage of professional, collegiate, and championship events.</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="experience-item">
                         <div className="experience-content">
                             <h3>Camera Operator</h3>
                             <p><strong>University of Massachusetts Lowell - Part-time</strong></p>
-                            <p>Sep 2024 - Present</p>
+                            <p>Sep 2024 - May 2026</p>
                             <p>Lowell, Massachusetts, United States - On-site</p>
-                            <p>
-                                • Live camera operator for UML Lowell Athletics in partnership with ESPN and AE.tv. Used a variety of cameras for a variety of sports including Basketball, Baseball, Softball, Lacrosse, Field Hockey, Soccer, Track and Field, and Ice Hockey.
-                            </p>
+                            <ul>
+                                <li>Operated live broadcast cameras and supported multimedia production for UMass Lowell Athletics coverage on ESPN, NESN, and AE.tv across a wide range of collegiate sports.</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="experience-item">
                         <div className="experience-content">
-                            <h3>Videographer/Editor</h3>
+                            <h3>Content and Marketing Manager</h3>
                             <p><strong>Refined Renovations, LLC - Part-time</strong></p>
-                            <p>Dec 2023 - Present</p>
+                            <p>Dec 2023 - Nov 2025</p>
                             <p>Wilmington, Massachusetts, United States - Hybrid</p>
-                            <p>
-                                • Videographer / Editor / Content Creator
-                            </p>
+                            <ul>
+                                <li>Produced and edited social content across Instagram, TikTok, YouTube, and Facebook to grow brand visibility and customer engagement.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div className="experience-image">
-                    <img src={picCluster2} alt="WorkExperienceImage" />
+                    <img src={picCluster2} alt="Work experience highlights" />
                 </div>
             </div>
         </section>

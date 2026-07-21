@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/allPhotos.css';
 
 // importing all photos images
@@ -26,7 +26,42 @@ import img19 from '../photos/white.jpg';
 import img21 from '../photos/vertical2.jpg';
 import img22 from '../photos/vertical1.jpg';
 
+const portfolio2026Context = require.context(
+    '../photos/portfolio-2026',
+    false,
+    /\.webp$/
+);
+
+const featuredPortfolioPhotos = [
+    './650a4127wall.webp',
+    './650a4139wall.webp',
+    './650a4155wall.webp',
+    './650a4185wall.webp',
+    './650a4333wall.webp',
+    './650a4535wall.webp',
+    './650a4647wall.webp',
+    './650a4804wall.webp',
+    './650a4955wall.webp'
+];
+
+const portfolio2026Images = portfolio2026Context
+    .keys()
+    .sort((a, b) => {
+        const aPriority = featuredPortfolioPhotos.indexOf(a);
+        const bPriority = featuredPortfolioPhotos.indexOf(b);
+
+        if (aPriority !== -1 || bPriority !== -1) {
+            if (aPriority === -1) return 1;
+            if (bPriority === -1) return -1;
+            return aPriority - bPriority;
+        }
+
+        return a.localeCompare(b);
+    })
+    .map(portfolio2026Context);
+
 const images = [
+    ...portfolio2026Images,
     img1, img2, img3, img4, img5, img6,
     img7, img8, img9, img10, img11, img12,
     img13, img14, img15, img16, img17,
@@ -34,12 +69,39 @@ const images = [
 ];
 
 const AllPhotos = () => {
-    const [selected, setSelected] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
+
+    const showPrevious = (e) => {
+        e.stopPropagation();
+        setSelectedIndex((current) => (current - 1 + images.length) % images.length);
+    };
+
+    const showNext = (e) => {
+        e.stopPropagation();
+        setSelectedIndex((current) => (current + 1) % images.length);
+    };
+
+    useEffect(() => {
+        if (selectedIndex === null) return undefined;
+
+        const handleKeyDown = (event) => {
+            if (event.key === 'ArrowLeft') {
+                setSelectedIndex((current) => (current - 1 + images.length) % images.length);
+            } else if (event.key === 'ArrowRight') {
+                setSelectedIndex((current) => (current + 1) % images.length);
+            } else if (event.key === 'Escape') {
+                setSelectedIndex(null);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [selectedIndex]);
 
     // Function to handle closing the lightbox
     const handleCloseClick = (e) => {
         e.stopPropagation(); // Prevent the lightbox onClick from firing
-        setSelected(null);
+        setSelectedIndex(null);
     };
 
     // Function to handle image click and set selected image
@@ -52,25 +114,31 @@ const AllPhotos = () => {
                         src={src}
                         alt={`${index + 1}`}
                         loading="lazy"
-                        onClick={() => setSelected(src)} // set selected image on click
+                        onClick={() => setSelectedIndex(index)}
                     />
                 ))}
             </div>
 
             {/* Modal preview and close button */}
-            {selected && (
-                <div className="lightbox" onClick={() => setSelected(null)}>
+            {selectedIndex !== null && (
+                <div className="lightbox" onClick={() => setSelectedIndex(null)}>
                     <button className="lightbox-close" onClick={handleCloseClick}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </button>
+                    <button className="lightbox-nav lightbox-previous" onClick={showPrevious} aria-label="Previous photo">
+                        &#10094;
+                    </button>
                     <img
-                        src={selected}
+                        src={images[selectedIndex]}
                         alt="Preview"
                         className="lightbox-img"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on image
                     />
+                    <button className="lightbox-nav lightbox-next" onClick={showNext} aria-label="Next photo">
+                        &#10095;
+                    </button>
                 </div>
             )}
         </>

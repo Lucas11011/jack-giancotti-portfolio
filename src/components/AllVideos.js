@@ -10,10 +10,13 @@ import video4 from '../videos/Final_Compressed.mp4';
 import video5 from '../videos/RefinedvideoCompressed.mp4';
 import video6 from '../videos/SandbarsunCompressed2.mp4';
 import video7 from '../videos/SaoLuisProjectCompressed5.mp4';
+import video8 from '../videos/JackGiancotti_2025_Uml.mp4';
 
 const videos = [
     // #t=0.5 skips the black opening frame so the browser shows a visible thumbnail
     { src: video0 + '#t=0.5', title: 'You Got It For Ant' },
+    { src: video8, title: 'Multimedia Reel' },
+    { embedSrc: 'https://umasslowell.azure-api.net/brightcove/v1/video/6397985478112', title: 'UML Industry Days' },
     { src: video1, title: 'Boat Video' },
     { src: video2, title: 'UML Disability Services' },
     { src: video3, title: 'Dock' },
@@ -30,10 +33,19 @@ const AllVideos = () => {
             <div className="video-grid">
                 {videos.map((video, index) => (
                     <div key={index} className="video-card">
-                        <video controls>
-                            <source src={video.src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        {video.embedSrc ? (
+                            <iframe
+                                src={video.embedSrc}
+                                title={video.title}
+                                allowFullScreen
+                                frameBorder="0"
+                            />
+                        ) : (
+                            <video controls>
+                                <source src={video.src} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        )}
                         <p>{video.title}</p>
                     </div>
                 ))}

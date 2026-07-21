@@ -20,9 +20,9 @@ const AboutMe = () => {
                 <p>
                     Hello, I'm Jack. I'm passionate about videography and all aspects of the editing process. Currently working in the sports broadcasting industry with a range of knowledge in numerous positions.
                     <br /><br />
-                    Grateful to have been chosen as one of PWHL's Boston Fleet's in-house cameramen, one of IFL's Massachusetts Pirates broadcast cameramen, and continue to work for the Tsongas Center in Lowell and for UML Athletics.
+                    Creative and data-minded content marketer with experience producing high-performing digital content across Instagram, TikTok, YouTube, and Facebook. Skilled in short-form and long-form video, brand storytelling, and social media growth.
                     <br /><br />
-                    Extensive prior experience in marketing and social media for Refined Renovations and built proficient knowledge in all Adobe software, mostly in Adobe Premiere Pro and DaVinci Resolve.
+                    Background in sports media and live production, with a strong understanding of audience engagement and visual communication. Experienced collaborating with leadership teams, managing content calendars, and delivering polished media assets that support brand goals.
                 </p>
                 <div className="icons">
                     <img src={Premiere} alt="Adobe Premiere Pro" title="Adobe Premiere Pro" />

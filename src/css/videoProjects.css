@@ -31,7 +31,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .project-card p {
@@ -56,11 +56,22 @@ video {
   line-height: 1.6;
 }
 
-.see-all {
+.video-projects .see-all {
   display: inline-block;
   color: #0000EE;
-  text-decoration: underline;
+  background: rgba(0, 0, 238, 0.06);
+  border-radius: 5px;
+  padding: 0.4rem 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
   font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.video-projects .see-all:hover,
+.video-projects .see-all:focus-visible {
+  background: rgba(0, 0, 238, 0.12);
+  transform: translateY(-1px);
 }
 
 

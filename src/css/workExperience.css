@@ -42,6 +42,16 @@
   line-height: 1.5;
 }
 
+.experience-content ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.experience-content li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+
 .experience-content p strong {
   font-weight: 500;
 }

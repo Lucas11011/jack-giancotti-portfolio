@@ -31,7 +31,7 @@ const Photography = () => {
                 className="see-all"
                 onClick={handleLinkClick}
             >
-                See all photos…
+                See all photos →
             </Link>
         </section>
     );

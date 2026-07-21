@@ -41,11 +41,22 @@
   line-height: 1.5;
 }
 
-.see-all {
+.photography .see-all {
   display: inline-block;
   color: #0000EE;
-  text-decoration: underline;
+  background: rgba(0, 0, 238, 0.06);
+  border-radius: 5px;
+  padding: 0.4rem 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
   font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.photography .see-all:hover,
+.photography .see-all:focus-visible {
+  background: rgba(0, 0, 238, 0.12);
+  transform: translateY(-1px);
 }
 
 /* Mobile Styles */
